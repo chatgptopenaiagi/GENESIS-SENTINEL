@@ -1,7 +1,7 @@
 {
   "mission": "GENESIS MOBILE-5",
   "version": "0.1.0",
-  "checked_at": "2026-10-30T23:07:07.823898+00:00",
+  "checked_at": "2026-10-30T23:14:42.660291+00:00",
   "local_platform": {
     "system": "Linux",
     "machine": "aarch64",
@@ -109,6 +109,126 @@
         },
         "failed": {}
       }
+    },
+    "final_sdist_verification": {
+      "passed": 9,
+      "failed": 0,
+      "details": {
+        "checked_at": "2026-10-30T23:08:49.274944+00:00",
+        "platform": {
+          "system": "Linux",
+          "machine": "aarch64",
+          "python": "3.14.6"
+        },
+        "artifacts": {
+          "sdist": {
+            "name": "genesis_arch_sentinel-0.1.0.tar.gz",
+            "sha256": "cb0568148021ad22641bdb85df29829afdf9e5ec207a564b8155f9aef709a8ec"
+          },
+          "existing_wheel": {
+            "name": "genesis_arch_sentinel-0.1.0-py3-none-any.whl",
+            "sha256": "27620709abbd45b63959c76a8015e1b696cb64b469b78835b3cd2ff2f568550d"
+          },
+          "rebuilt_wheel": {
+            "name": "genesis_arch_sentinel-0.1.0-py3-none-any.whl",
+            "sha256": "5b0b6d22412f954ebd38400f0d3ca2d2ac6ced7055c37142fad3495b1948210d"
+          }
+        },
+        "checks": {
+          "safe_source_extraction": true,
+          "sdist_build_without_new_dependencies": true,
+          "identical_runtime_modules_and_assets": true,
+          "clean_venv_install_no_dependencies": true,
+          "installed_cli_version": true,
+          "clean_cli_init_and_environment_discovery": true,
+          "stdlib_capability_registered": true,
+          "clean_incremental_refresh": true,
+          "imports_from_installed_venv": true
+        },
+        "status": "PASS",
+        "runtime_payload": {
+          "files": 16,
+          "sha256": "0e1c3d340f7e7e0cfb8c3a1d2b7811f89322f19a742d8bd15b923a2d3e145409",
+          "matches_existing_wheel": true
+        },
+        "finished_at": "2026-10-30T23:09:31.223114+00:00"
+      }
+    },
+    "published_wheel_clean_install": {
+      "passed": 13,
+      "failed": 0,
+      "details": {
+        "checked_at": "2026-10-30T23:11:55.050444+00:00",
+        "platform": {
+          "system": "Linux",
+          "machine": "aarch64",
+          "python": "3.14.6"
+        },
+        "artifact": {
+          "name": "genesis_arch_sentinel-0.1.0-py3-none-any.whl",
+          "sha256": "27620709abbd45b63959c76a8015e1b696cb64b469b78835b3cd2ff2f568550d"
+        },
+        "passed": {
+          "clean_wheel_installation": {
+            "installed_from_wheel": true,
+            "isolated_site_packages": true
+          },
+          "cli_startup": true,
+          "software_and_environment_discovery": {
+            "errors": 0,
+            "registered_interpreter_detected": true,
+            "registered_project_detected": true
+          },
+          "real_standard_library_capability_verification": {
+            "bounded_sqlite_query_verified": true,
+            "evidence_retained": true
+          },
+          "incremental_unchanged_refresh": {
+            "cached": true,
+            "changes": 0
+          },
+          "installation_and_capability_registration": {
+            "fixture_detected": true,
+            "capability_registered": true,
+            "not_claimed_verified": true
+          },
+          "failed_verification_retains_evidence": {
+            "intentional_fixture_failure_retained": true
+          },
+          "version_change_detection": {
+            "new_version_detected": true,
+            "before_after_audit_retained": true
+          },
+          "removal_detection": {
+            "removal_detected": true
+          },
+          "concurrent_writer_protection": {
+            "second_writer_rejected": true,
+            "committed_generation_preserved": true
+          },
+          "interrupted_update_recovery": {
+            "incomplete_generation_rejected": true,
+            "valid_generation_recovered": true,
+            "refresh_after_recovery": true
+          },
+          "fresh_process_awareness_and_integration_rollback": {
+            "guidance_created": true,
+            "fresh_process_reads_brief_and_graph": true,
+            "wrapper_refreshes_generation": true,
+            "literal_arguments_preserved": true,
+            "rollback_preserves_user_text": true,
+            "actual_codex_not_launched": true
+          },
+          "package_uninstall_preserves_state": {
+            "console_script_removed": true,
+            "inventory_retained": true
+          }
+        },
+        "failed": {},
+        "skipped": {},
+        "scope": "Actual wheel installed without dependencies into a clean temporary venv; synthetic configuration/project/distribution fixtures; no user data published.",
+        "finished_at": "2026-10-30T23:12:49.470929+00:00"
+      }
     }
   },
   "privacy": {
@@ -116,10 +236,11 @@
     "files_checked": 131,
     "independent_review": "PASS",
     "active_secret_values_compared_privately": 8,
-    "copied_operational_documents": 0
+    "copied_operational_documents": 0,
+    "final_source_and_artifact_audit": "PASS"
   },
   "local_preservation": {
-    "checked_at": "2026-10-30T23:04:56.042147+00:00",
+    "checked_at": "2026-10-30T23:12:34.334061+00:00",
     "original_deployment": {
       "checked": 476,
       "unchanged": 476,
@@ -158,22 +279,206 @@
     "scope": "Historical deployment evidence; not counted as release tests."
   },
   "remote_verification": {
-    "status": "PENDING",
-    "repository": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL",
-    "tag": "v0.1.0"
+    "status": "VERIFIED",
+    "repository_url": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL",
+    "repository_visibility": "PUBLIC",
+    "release_url": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL/releases/tag/v0.1.0",
+    "tag": "v0.1.0",
+    "source_commit": "60f38e2dfea987906d3c993d5c60db7ae44f550f",
+    "published_at": "2026-10-30T23:11:32Z",
+    "is_prerelease": true,
+    "ci_run_url": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL/actions/runs/41142709084",
+    "ci_conclusion": "success",
+    "jobs": [
+      {
+        "name": "linux (3.10)",
+        "conclusion": "success",
+        "url": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL/actions/runs/41142709084/job/124360541480"
+      },
+      {
+        "name": "linux (3.12)",
+        "conclusion": "success",
+        "url": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL/actions/runs/41142709084/job/124360541883"
+      },
+      {
+        "name": "linux (3.14)",
+        "conclusion": "success",
+        "url": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL/actions/runs/41142709084/job/124360541921"
+      }
+    ],
+    "platform_results": {
+      "status": "PASS",
+      "source_commit": "60f38e2dfea987906d3c993d5c60db7ae44f550f",
+      "runs": [
+        {
+          "artifact": "verification-3.10",
+          "platform": {
+            "system": "Linux",
+            "machine": "x86_64",
+            "python": "3.10.22"
+          },
+          "passed": 13,
+          "failed": 0
+        },
+        {
+          "artifact": "verification-3.12",
+          "platform": {
+            "system": "Linux",
+            "machine": "x86_64",
+            "python": "3.12.15"
+          },
+          "passed": 13,
+          "failed": 0
+        },
+        {
+          "artifact": "verification-3.14",
+          "platform": {
+            "system": "Linux",
+            "machine": "x86_64",
+            "python": "3.14.9"
+          },
+          "passed": 13,
+          "failed": 0
+        }
+      ],
+      "offline_x86_64_archive": {
+        "name": "genesis-sentinel-0.1.0-linux-x86_64.tar.gz",
+        "sha256": "e843879968969b590f5ac8ca377d93fb17c38826511569528984c3898344732a",
+        "actual_installer_tested_in_ci": true,
+        "runtime_payload_matches_local_wheel": true,
+        "runtime_files": 16
+      }
+    },
+    "downloaded_assets": {
+      "checked_at": "2026-10-30T23:11:54.498115+00:00",
+      "status": "PASS",
+      "release_url": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL/releases/tag/v0.1.0",
+      "tag": "v0.1.0",
+      "is_prerelease": true,
+      "source_commit": "60f38e2dfea987906d3c993d5c60db7ae44f550f",
+      "assets_downloaded": 12,
+      "sha256_payloads_and_manifest_verified": 11,
+      "checksum_file_matches_staging": true,
+      "all_published_bytes_match_staging": true,
+      "manifest_assets_verified": 10,
+      "github_reported_asset_digests_verified": 12,
+      "remote_annotated_tag_commit_verified": "60f38e2dfea987906d3c993d5c60db7ae44f550f"
+    },
+    "assets": [
+      {
+        "name": "ARCHITECTURE.md",
+        "size": 9691,
+        "url": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL/releases/download/v0.1.0/ARCHITECTURE.md",
+        "github_digest": "sha256:a959a669621b743bf06acc854517ec3abef086acafc90861471439c095a32bfd"
+      },
+      {
+        "name": "genesis-sentinel-0.1.0-linux-aarch64.tar.gz",
+        "size": 96979,
+        "url": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL/releases/download/v0.1.0/genesis-sentinel-0.1.0-linux-aarch64.tar.gz",
+        "github_digest": "sha256:9124715eeed3bd09b4018fd4401f79e62083ccdc6d1bd799eeaf28d4c78817f3"
+      },
+      {
+        "name": "genesis-sentinel-0.1.0-linux-x86_64.tar.gz",
+        "size": 96926,
+        "url": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL/releases/download/v0.1.0/genesis-sentinel-0.1.0-linux-x86_64.tar.gz",
+        "github_digest": "sha256:e843879968969b590f5ac8ca377d93fb17c38826511569528984c3898344732a"
+      },
+      {
+        "name": "genesis_arch_sentinel-0.1.0-py3-none-any.whl",
+        "size": 72762,
+        "url": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL/releases/download/v0.1.0/genesis_arch_sentinel-0.1.0-py3-none-any.whl",
+        "github_digest": "sha256:27620709abbd45b63959c76a8015e1b696cb64b469b78835b3cd2ff2f568550d"
+      },
+      {
+        "name": "genesis_arch_sentinel-0.1.0.tar.gz",
+        "size": 103174,
+        "url": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL/releases/download/v0.1.0/genesis_arch_sentinel-0.1.0.tar.gz",
+        "github_digest": "sha256:cb0568148021ad22641bdb85df29829afdf9e5ec207a564b8155f9aef709a8ec"
+      },
+      {
+        "name": "INSTALL.md",
+        "size": 4018,
+        "url": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL/releases/download/v0.1.0/INSTALL.md",
+        "github_digest": "sha256:fc243d37df6d7507ad7402befc3cb60c79b2cae64fdcfc3db78191c3968e5d77"
+      },
+      {
+        "name": "LICENSE",
+        "size": 1086,
+        "url": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL/releases/download/v0.1.0/LICENSE",
+        "github_digest": "sha256:3f45a106f4ab32d647ed5fd3572a94966b5e0ce256a544e5746619a8a1541253"
+      },
+      {
+        "name": "RECOVERY.md",
+        "size": 2509,
+        "url": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL/releases/download/v0.1.0/RECOVERY.md",
+        "github_digest": "sha256:e97c37fb37386ca49ffcfb966d6d45490f00e1b6f9f0e3f53d839b67e8fce814"
+      },
+      {
+        "name": "RELEASE-MANIFEST.json",
+        "size": 4288,
+        "url": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL/releases/download/v0.1.0/RELEASE-MANIFEST.json",
+        "github_digest": "sha256:c0774af55d652a4ce305d35c0926909fbdf936adf65254c61180336c32258d34"
+      },
+      {
+        "name": "SCIENTIFIC-INTEGRATION.md",
+        "size": 4196,
+        "url": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL/releases/download/v0.1.0/SCIENTIFIC-INTEGRATION.md",
+        "github_digest": "sha256:685096aacb7a174f82c6fbdfc762a6a08e3af7885514bf66ef2a52c8589c8287"
+      },
+      {
+        "name": "SHA256SUMS",
+        "size": 998,
+        "url": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL/releases/download/v0.1.0/SHA256SUMS",
+        "github_digest": "sha256:b7288bd13eedb9bbd34089e3292284c26f08ce2f854a1b2663c8fd5b64d7f547"
+      },
+      {
+        "name": "THEORY.md",
+        "size": 18826,
+        "url": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL/releases/download/v0.1.0/THEORY.md",
+        "github_digest": "sha256:648bee90719bde55f677468d5eadf996d6bb7582861d0c94908ef0be1335e7f0"
+      }
+    ]
   },
   "retained_attempts": [
     "Initial core fixture wrongly rejected the dynamically selected interpreter path; assertion corrected and final 36-test suite passed.",
     "Initial audit helper lacked output-parent creation; helper corrected, final source/artifact audit passed.",
-    "One earlier installed-wheel run was strengthened to read and validate brief+graph, exercise wrapper refresh and assert before/after version audit; both runs passed."
+    "One earlier installed-wheel run was strengthened to read and validate brief+graph, exercise wrapper refresh and assert before/after version audit; both runs passed.",
+    "A 2-second Joomla availability check timed out during packaging; a subsequent bounded 20-second check returned HTTP 200. No service restart or application repair was performed."
   ],
   "limitations": [
-    "Linux only; current local execution is ARM64, Python 3.14. Remote x86_64 qualification is pending actual CI.",
+    "Linux ARM64/Python 3.14.6 verified locally; Linux x86_64/Python 3.10.22, 3.12.15 and 3.14.9 verified by completed hosted CI, including offline installer execution. Other versions/platforms remain unqualified.",
     "Optional Science/Joomla deployment adapters use guarded fixed helper names; their release tests use synthetic identity/busy fixtures, not independent third-party application installations.",
     "Optional Jupyter starts an existing registered Jupyter environment; no clean third-party Jupyter installation was created for this release.",
     "Fresh-process awareness validates emitted guidance and records with a separate process/fake CLI; no actual new Codex model invocation is claimed.",
     "Core credential-free HTTP observations may follow redirects from explicitly configured trusted endpoints; dashboard observers reject redirects.",
     "No physical Android touch, Android reboot survival, Windows/macOS support or GPU compute claim.",
     "Private recovery archive integrity is verified; full production rollback/restoration was not executed."
-  ]
+  ],
+  "source_commit": "60f38e2dfea987906d3c993d5c60db7ae44f550f",
+  "original_service_http": {
+    "checked_at": "2026-10-30T23:13:14.281135+00:00",
+    "prior_observation": "Sentinel 2-second Joomla observer timed out during concurrent packaging tests; retained as UNKNOWN, not installation failure.",
+    "checks": {
+      "8080": {
+        "http": 200,
+        "responding": true
+      },
+      "8081": {
+        "http": 401,
+        "responding": true
+      },
+      "8090": {
+        "http": 401,
+        "responding": true
+      },
+      "8091": {
+        "http": 200,
+        "responding": true
+      },
+      "8888": {
+        "http": 200,
+        "responding": true
+      }
+    }
+  }
 }

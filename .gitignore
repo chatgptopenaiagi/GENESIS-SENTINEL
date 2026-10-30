@@ -8,3 +8,15 @@ __pycache__/
 /.release-work/
 /evidence-private/
 *.log
+
+# Operational state and credentials never belong in public source.
+private/
+runtime/
+generations/
+.env
+.env.*
+SOFTWARE-INVENTORY.json
+ENVIRONMENTS.json
+CAPABILITY-GRAPH.json
+PROJECT-MAP.json
+CHANGES.jsonl

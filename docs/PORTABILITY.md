@@ -32,3 +32,7 @@ A mock or fixture test of an adapter establishes only that dispatch and guards b
 ## Unimplemented scope
 
 Windows-native execution, macOS guarantees, universal package-manager hooks, remote inventory fleets, automatic application installation, model-memory modification, automatic public hosting and transparent integration into every Codex launch path are outside this prerelease's verified scope. Running the package in a container or emulator can be useful, but is not equivalent to testing every host facility or scientific engine.
+
+## v0.1.0 completed evidence
+
+The published release was tested locally on Linux aarch64/Python 3.14.6 and by completed hosted Linux x86_64 jobs on Python 3.10.22, 3.12.15 and 3.14.9. Hosted offline installer execution also passed. See [run 41142709084](https://github.com/chatgptopenaiagi/GENESIS-SENTINEL/actions/runs/41142709084) and the final test report. This records actual runs without extending claims to untested interpreters or operating systems.
