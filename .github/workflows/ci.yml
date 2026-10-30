@@ -21,7 +21,16 @@ jobs:
       - run: python -m pip install --no-deps dist/*.whl
       - run: python -m unittest discover -s tests -v
       - run: python tools/release_acceptance.py --wheel dist/*.whl --output ci-acceptance.json
+      - run: python tools/build_release.py --skip-python-build --platform linux-x86_64
+      - name: Install offline Linux x86_64 bundle
+        run: |
+          mkdir "$RUNNER_TEMP/genesis-bundle"
+          tar -xzf dist/genesis-sentinel-0.1.0-linux-x86_64.tar.gz -C "$RUNNER_TEMP/genesis-bundle"
+          "$RUNNER_TEMP/genesis-bundle/genesis-sentinel-0.1.0/install.sh" --python "$(command -v python)" --prefix "$RUNNER_TEMP/genesis-installed"
+          "$RUNNER_TEMP/genesis-installed/bin/genesis-sentinel" --version
       - uses: actions/upload-artifact@v4
         with:
           name: verification-${{ matrix.python-version }}
-          path: ci-acceptance.json
+          path: |
+            ci-acceptance.json
+            dist/genesis-sentinel-0.1.0-linux-x86_64.tar.gz
