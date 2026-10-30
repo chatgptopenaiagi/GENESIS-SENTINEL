@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "interpreters": [],
+  "conda_roots": [],
+  "conda_registry_files": [],
+  "projects": [],
+  "extra_roots": [],
+  "tool_roots": [],
+  "services": [],
+  "collect_arch_packages": false,
+  "verification_ttl_hours": 24
+}

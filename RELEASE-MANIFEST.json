@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "version": "0.1.0",
+  "tag": "v0.1.0",
+  "status": "LOCAL_VERIFIED_REMOTE_PENDING",
+  "source_ref": "refs/tags/v0.1.0",
+  "source_commit": "Resolved in the uploaded release manifest after the immutable source commit exists.",
+  "repository_url": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL",
+  "artifact_manifest": "GitHub release asset RELEASE-MANIFEST.json includes resolved commit and payload SHA-256 values.",
+  "private_data_included": false
+}

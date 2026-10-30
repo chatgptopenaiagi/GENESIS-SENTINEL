@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genesis-arch-sentinel"
+version = "0.1.0"
+description = "Evidence-backed software capability awareness and a local human control center"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "GENESIS Sentinel contributors"}]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Topic :: System :: Systems Administration",
+]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL"
+Issues = "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL/issues"
+
+[project.scripts]
+genesis-sentinel = "genesis_sentinel.cli:main"
+genesis-sentinel-dashboard = "genesis_sentinel.control_lifecycle:main"
+genesis-sentinel-jupyter = "genesis_sentinel.jupyter:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+genesis_sentinel = ["web-control/*.html", "web-control/*.css", "web-control/*.js"]

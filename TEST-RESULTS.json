@@ -1,0 +1,179 @@
+{
+  "mission": "GENESIS MOBILE-5",
+  "version": "0.1.0",
+  "checked_at": "2026-10-30T23:07:07.823898+00:00",
+  "local_platform": {
+    "system": "Linux",
+    "machine": "aarch64",
+    "python": "3.14.6"
+  },
+  "test_groups": {
+    "unit_and_integration": {
+      "passed": 36,
+      "failed": 0,
+      "scope": "17 inventory/concurrency/recovery tests, 6 guidance/launcher tests, 13 dashboard/security/lifecycle tests"
+    },
+    "installed_wheel_acceptance": {
+      "passed": 13,
+      "failed": 0,
+      "details": {
+        "checked_at": "2026-10-30T23:05:28.800155+00:00",
+        "platform": {
+          "system": "Linux",
+          "machine": "aarch64",
+          "python": "3.14.6"
+        },
+        "artifact": {
+          "name": "genesis_arch_sentinel-0.1.0-py3-none-any.whl",
+          "sha256": "27620709abbd45b63959c76a8015e1b696cb64b469b78835b3cd2ff2f568550d"
+        },
+        "passed": {
+          "clean_wheel_installation": {
+            "installed_from_wheel": true,
+            "isolated_site_packages": true
+          },
+          "cli_startup": true,
+          "software_and_environment_discovery": {
+            "errors": 0,
+            "registered_interpreter_detected": true,
+            "registered_project_detected": true
+          },
+          "real_standard_library_capability_verification": {
+            "bounded_sqlite_query_verified": true,
+            "evidence_retained": true
+          },
+          "incremental_unchanged_refresh": {
+            "cached": true,
+            "changes": 0
+          },
+          "installation_and_capability_registration": {
+            "fixture_detected": true,
+            "capability_registered": true,
+            "not_claimed_verified": true
+          },
+          "failed_verification_retains_evidence": {
+            "intentional_fixture_failure_retained": true
+          },
+          "version_change_detection": {
+            "new_version_detected": true,
+            "before_after_audit_retained": true
+          },
+          "removal_detection": {
+            "removal_detected": true
+          },
+          "concurrent_writer_protection": {
+            "second_writer_rejected": true,
+            "committed_generation_preserved": true
+          },
+          "interrupted_update_recovery": {
+            "incomplete_generation_rejected": true,
+            "valid_generation_recovered": true,
+            "refresh_after_recovery": true
+          },
+          "fresh_process_awareness_and_integration_rollback": {
+            "guidance_created": true,
+            "fresh_process_reads_brief_and_graph": true,
+            "wrapper_refreshes_generation": true,
+            "literal_arguments_preserved": true,
+            "rollback_preserves_user_text": true,
+            "actual_codex_not_launched": true
+          },
+          "package_uninstall_preserves_state": {
+            "console_script_removed": true,
+            "inventory_retained": true
+          }
+        },
+        "failed": {},
+        "skipped": {},
+        "scope": "Actual wheel installed without dependencies into a clean temporary venv; synthetic configuration/project/distribution fixtures; no user data published.",
+        "finished_at": "2026-10-30T23:06:24.972115+00:00"
+      }
+    },
+    "distribution_installation": {
+      "passed": 2,
+      "failed": 0,
+      "details": {
+        "checked_at": "2026-10-30T23:03:37.699000+00:00",
+        "passed": {
+          "sdist_rebuild_and_install": {
+            "sdist_built_into_wheel": true,
+            "rebuilt_wheel_installed": true,
+            "cli_started": true
+          },
+          "linux_archive_installation": {
+            "offline_installer": true,
+            "console_script_started": true,
+            "existing_prefix_refused": true,
+            "wrapper_not_native_binary": true
+          }
+        },
+        "failed": {}
+      }
+    }
+  },
+  "privacy": {
+    "pattern_audit": "PASS",
+    "files_checked": 131,
+    "independent_review": "PASS",
+    "active_secret_values_compared_privately": 8,
+    "copied_operational_documents": 0
+  },
+  "local_preservation": {
+    "checked_at": "2026-10-30T23:04:56.042147+00:00",
+    "original_deployment": {
+      "checked": 476,
+      "unchanged": 476,
+      "preserved": true
+    },
+    "protected_apps_and_credentials": {
+      "checked": 56,
+      "unchanged": 56,
+      "preserved": true
+    },
+    "research": {
+      "checked": 717,
+      "unchanged": 717,
+      "preserved": true
+    },
+    "conda_metadata": {
+      "checked": 1139,
+      "unchanged": 1139,
+      "preserved": true
+    },
+    "native_packages": {
+      "count": 731,
+      "unchanged": true
+    },
+    "codex": {
+      "version": "codex-cli 0.166.0",
+      "preserved": true
+    },
+    "existing_github_auth_config_preserved": true,
+    "recovery_archive_integrity": true
+  },
+  "prior_mobile4_acceptance": {
+    "assertions_passed": 78,
+    "assertions_failed": 0,
+    "physical_touch_tested": false,
+    "scope": "Historical deployment evidence; not counted as release tests."
+  },
+  "remote_verification": {
+    "status": "PENDING",
+    "repository": "https://github.com/chatgptopenaiagi/GENESIS-SENTINEL",
+    "tag": "v0.1.0"
+  },
+  "retained_attempts": [
+    "Initial core fixture wrongly rejected the dynamically selected interpreter path; assertion corrected and final 36-test suite passed.",
+    "Initial audit helper lacked output-parent creation; helper corrected, final source/artifact audit passed.",
+    "One earlier installed-wheel run was strengthened to read and validate brief+graph, exercise wrapper refresh and assert before/after version audit; both runs passed."
+  ],
+  "limitations": [
+    "Linux only; current local execution is ARM64, Python 3.14. Remote x86_64 qualification is pending actual CI.",
+    "Optional Science/Joomla deployment adapters use guarded fixed helper names; their release tests use synthetic identity/busy fixtures, not independent third-party application installations.",
+    "Optional Jupyter starts an existing registered Jupyter environment; no clean third-party Jupyter installation was created for this release.",
+    "Fresh-process awareness validates emitted guidance and records with a separate process/fake CLI; no actual new Codex model invocation is claimed.",
+    "Core credential-free HTTP observations may follow redirects from explicitly configured trusted endpoints; dashboard observers reject redirects.",
+    "No physical Android touch, Android reboot survival, Windows/macOS support or GPU compute claim.",
+    "Private recovery archive integrity is verified; full production rollback/restoration was not executed."
+  ]
+}

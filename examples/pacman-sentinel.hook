@@ -1,0 +1,12 @@
+# TEMPLATE ONLY: replace the absolute paths before opting in.
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Mark the user's GENESIS Sentinel inventory for reconciliation
+When = PostTransaction
+Exec = /absolute/path/to/venv/bin/genesis-sentinel --state-dir /absolute/private/state mark-dirty pacman-transaction
